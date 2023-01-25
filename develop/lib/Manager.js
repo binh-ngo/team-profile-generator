@@ -3,8 +3,8 @@ const Employee = require('./Employee');
 
 class Manager extends Employee {
     constructor (name, id, email, officeNumber) {
-        // inheriting employee constructor
-        super(name, id, email);
+    // inheriting employee constructor while also assigning an officeNumber key to each new manager
+    super(name, id, email);
         this.officeNumber = officeNumber;
     }
     getRole() {
