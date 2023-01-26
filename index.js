@@ -202,12 +202,9 @@ const writeHTML = (data) => {
   });
 };
 
-addManager()
-  .then(addEmployees)
-  .then((teamArr) => {
+addManager().then(addEmployees).then((teamArr) => {
     return generateHTML(teamArr);
-  })
-  .then((profileHtml) => {
+  }).then((profileHtml) => {
     return writeHTML(profileHtml);
   })
   .catch((err) => {
