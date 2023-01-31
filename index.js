@@ -1,9 +1,9 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
-const Manager = require("./develop/lib/Manager");
-const Engineer = require("./develop/lib/Engineer");
-const Intern = require("./develop/lib/Intern");
-const generateHTML = require("./develop/util/generateHtml");
+const Manager = require("./lib/Manager");
+const Engineer = require("./lib/Engineer");
+const Intern = require("./lib/Intern");
+const generateHTML = require("./util/generateHtml");
 
 const teamArr = []; // empty array to store all team members
 
